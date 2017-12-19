@@ -8,6 +8,7 @@ import android.widget.LinearLayout
 /**
  * Created by dyuan on 12/19/2017.
  */
+/*
 class PokeAdapter(private val pokes: ArrayList<Poke>) : RecyclerView.Adapter<PokeHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): PokeHolder {
@@ -23,3 +24,4 @@ class PokeAdapter(private val pokes: ArrayList<Poke>) : RecyclerView.Adapter<Pok
         return pokes.toArray().count()
     }
 }
+*/

@@ -13,6 +13,7 @@ import android.view.ViewGroup
 /**
  * Created by dyuan on 12/19/2017.
  */
+/*
 class PokeListFragment(passedContext: Context) : Fragment() {
 
     val pokeFactory : PokeFactory = PokeFactory(passedContext)
@@ -45,3 +46,4 @@ class PokeListFragment(passedContext: Context) : Fragment() {
         }
     }
 }
+*/

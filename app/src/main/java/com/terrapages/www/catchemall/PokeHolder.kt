@@ -8,6 +8,7 @@ import android.widget.TextView
 /**
  * Created by dyuan on 12/19/2017.
  */
+/*
 class PokeHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val pokeImage: ImageView = itemView.findViewById<ImageView>(R.id.pokeImageView)
     private val pokeName: TextView = itemView.findViewById<TextView>(R.id.pokeTextView_name)
@@ -20,3 +21,4 @@ class PokeHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         pokeCaught.text = poke.caught
     }
 }
+*/
