@@ -21,7 +21,7 @@ class PokeListFragment(passedContext: Context) : Fragment() {
     val passThroughContext : Context = passedContext
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        val rootView = inflater!!.inflate(R.layout.poke_fragment, container, false)
+        val rootView = inflater!!.inflate(R.layout.list_fragment, container, false)
         val recyclerView = rootView.findViewById<RecyclerView>(R.id.pokeRecyclerView) as RecyclerView
         val listType = this.arguments.getSerializable(ARG_LIST_TYPE) as PokeListType
         var pokes = ArrayList<Poke>()
