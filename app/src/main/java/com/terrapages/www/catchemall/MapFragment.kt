@@ -3,9 +3,16 @@ package com.terrapages.www.catchemall
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v4.app.FragmentManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import com.google.android.gms.maps.*
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.Marker
+import com.google.android.gms.maps.model.MarkerOptions
+import kotlinx.android.synthetic.main.fragment_map.*
 
 
 /**
@@ -13,6 +20,7 @@ import android.view.ViewGroup
  */
 class MapFragment : Fragment() {
 
+//    private lateinit var mMap: GoogleMap
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -20,4 +28,12 @@ class MapFragment : Fragment() {
         return inflater!!.inflate(R.layout.fragment_map, container, false)
     }
 
+//    override fun onMapReady(map: GoogleMap?) {
+//        mMap = map as GoogleMap
+//
+//        val sydney = LatLng(-34.0, -151.0)
+//        mMap.addMarker(MarkerOptions().position(sydney).title("Seed nay"))
+//        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+//        Toast.makeText(this.context, "OnMapReady end", Toast.LENGTH_LONG).show()
+//    }
 }// Required empty public constructor

@@ -3,6 +3,7 @@ package com.terrapages.www.catchemall
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.TabLayout
+import com.google.android.gms.maps.SupportMapFragment
 import com.terrapages.www.catchemall.dummy.DummyContent
 
 import kotlinx.android.synthetic.main.activity_main.*
