@@ -18,9 +18,9 @@ import kotlinx.android.synthetic.main.fragment_map.*
 /**
  * A simple [Fragment] subclass.
  */
-class MapFragment : Fragment() {
+class MapFragment : Fragment(), OnMapReadyCallback {
 
-//    private lateinit var mMap: GoogleMap
+    private lateinit var mMap: GoogleMap
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
@@ -28,12 +28,12 @@ class MapFragment : Fragment() {
         return inflater!!.inflate(R.layout.fragment_map, container, false)
     }
 
-//    override fun onMapReady(map: GoogleMap?) {
-//        mMap = map as GoogleMap
-//
-//        val sydney = LatLng(-34.0, -151.0)
-//        mMap.addMarker(MarkerOptions().position(sydney).title("Seed nay"))
-//        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
-//        Toast.makeText(this.context, "OnMapReady end", Toast.LENGTH_LONG).show()
-//    }
+    override fun onMapReady(googleMap: GoogleMap) {
+        mMap = googleMap
+
+        // Add a marker in Sydney and move the camera
+        val sydney = LatLng(-34.0, -151.0)
+        mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+    }
 }// Required empty public constructor
